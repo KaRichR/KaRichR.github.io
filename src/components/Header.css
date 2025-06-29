@@ -1,0 +1,27 @@
+.nav-links a {
+  color: inherit;
+  text-decoration: none;
+  transition: font-weight 0.2s ease;
+}
+
+.nav-links a:hover {
+  font-weight: bold;
+}
+
+/* Add to Header.css */
+header {
+  padding: 1rem 0.5rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
