@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Donate from "./pages/Donate";
@@ -11,6 +11,14 @@ import { GlobalStyles } from "./styles/globalStyles";
 import Legal from "./pages/Legal";
 
 function App() {
+    useEffect(() => {
+    const redirectedPath = sessionStorage.getItem("redirect");
+    if (redirectedPath) {
+      sessionStorage.removeItem("redirect");
+      window.history.replaceState(null, "", redirectedPath);
+    }
+  }, []);
+
   return (
     <>
       <GlobalStyles />
