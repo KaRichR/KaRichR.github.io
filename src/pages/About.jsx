@@ -77,9 +77,9 @@ export default function About() {
 
       <div style={{ ...cardStyle, textAlign: "center" }}>
         <p style={textStyle}>Wanna see how far we can take this joke?</p>
-        <a href="/donate" style={buttonStyle}>
+        <Link to="/donate" style={buttonStyle}>
           Throw Money At The Problem
-        </a>
+        </Link>
       </div>
     </div>
   );

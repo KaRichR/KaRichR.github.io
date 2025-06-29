@@ -5,9 +5,9 @@ export default function Footer() {
     <footer style={styles.footer}>
       <p style={styles.text}>
         © {new Date().getFullYear()} Ten Million Quest. All rights reserved. |{" "}
-        <a href="/legal" style={styles.link}>
+        <Link to="/legal" style={styles.link}>
           Legal Disclaimer
-        </a>
+        </Link>
       </p>
     </footer>
   );
