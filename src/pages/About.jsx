@@ -1,5 +1,7 @@
 import React from "react";
 import { Global, css } from "@emotion/react";
+import { Link } from "react-router-dom";
+
 
 export default function About() {
   return (
