@@ -30,7 +30,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": ".",
+  "homepage": "https://karichr.github.io/",
   "browserslist": {
     "production": [
       ">0.2%",
